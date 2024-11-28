@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Formulario de Inscripcion</title> 
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulario de Inscripcion</h1>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre Completo:</label> 
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre Completo" required> 
+
+            <label for="correo">Correo Electronico</label> 
+            <input type="text" id="correo" name="correo" placeholder="ejemplo@correo.com" required> 
+            
+            <label for="curso">Selecciona curso:</label> 
+            <select id="curso" name="curso"> 
+                
+                <option value="HTML">HTML Básico</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="IA">Inteligencia Artificial</option>
+            </select>
+
+            <fieldset>
+               <legend>Modalidad del curso:</legend> 
+
+               <label for="online"><input type="radio" id="online" name="Modalidad" value="online" required>Online</label>                   
+               <label for="Presencial"><input type="radio" id="Presencial" name="Modalidad" value="Presencial" required>Presencial</label>                 
+                    
+            </fieldset>
+
+            <fieldset> 
+
+                <legend>Temas de interés:</legend>
+                <label for="Frontend"><input type="checkbox" id="Frontend" name="intereses" value="Frontend">Frontend</label>                   
+                    
+                <label for="Backend"><input type="checkbox" id="Backend" name="intereses" value="Backend">Backend</label>                    
+                   
+                <label for="Fullstack"><input type="checkbox" id="Fullstack" name="intereses" value="Fullstack">Fullstack</label>                     
+                    
+            </fieldset>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea> 
+
+           <div class="linea">
+            
+                <button type="submit" >Enviar</button>
+                <button type="reset" >Limpiar</button>
+
+           </div>
+
+
+
+
+        </form>
+         
+
+    </div>
+</body>
